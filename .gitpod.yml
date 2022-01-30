@@ -4,6 +4,7 @@ tasks:
     command: yarn dev
   - init: |
       sh -c "$(curl -sSfL https://release.solana.com/v1.8.5/install)"
+      export PATH="/home/gitpod/.local/share/solana/install/active_release/bin:$PATH"
       solana config set --url https://api.devnet.solana.com
       mkdir solana-wallet
       solana-keygen new --outfile solana-wallet/keypair.json
