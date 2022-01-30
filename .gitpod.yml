@@ -8,7 +8,6 @@ tasks:
       solana config set --url https://api.devnet.solana.com
       mkdir solana-wallet
       solana-keygen new --outfile solana-wallet/keypair.json
-      solana airdrop 1 $(solana-keygen pubkey solana-wallet/keypair.json)
     command: solana --version
       
 ports:
